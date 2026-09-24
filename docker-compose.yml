@@ -35,9 +35,9 @@ services:
     container_name: project-db
     restart: unless-stopped
     environment:
-      POSTGRES_DB: ${DB_DATABASE:-app_finem}
-      POSTGRES_USER: ${DB_USERNAME:-app_finem_user}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-Erichganteng160507!}
+      POSTGRES_DB: ${DB_DATABASE}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:
       - "5432:5432"
     volumes:
